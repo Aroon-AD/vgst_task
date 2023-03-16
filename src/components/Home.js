@@ -1,12 +1,12 @@
 import axios from 'axios'
-import React, { Fragment, useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { ItemContext } from '../ContextApi/ItemContext'
 import { useNavigate } from 'react-router-dom';
 
 
 export default function Home() {
   const navigate = useNavigate();
-  const { ItemData, setItemData } = useContext(ItemContext)
+  const { ItemData } = useContext(ItemContext)
   const [search, setSearch] = useState("")
   const [open, setOpen] = useState(false)
 

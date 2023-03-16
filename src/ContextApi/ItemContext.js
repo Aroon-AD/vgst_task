@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { createContext, useEffect, useState } from 'react'
-import Home from '../components/Home';
 
 
 export const ItemContext = createContext();
@@ -14,7 +13,7 @@ export const ItemProvider = ({ children }) => {
     <ItemContext.Provider
       value={{ ItemData, setItemData }}
     >
-      {/* <Home /> */}
+      
       {children}
     </ItemContext.Provider >
   )

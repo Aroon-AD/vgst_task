@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 export const CheckOutModel = () => {
@@ -6,7 +6,7 @@ export const CheckOutModel = () => {
   const [open, setOpen] = useState(false)
   const [Error, setError] = useState(false)
   const [inputs, setIputs] = useState({ full_name: "", email: "", phone: "", address: "", city: "", country: "", state: "", zipcode: "" })
-  const [fullname, setFullName] = useState("")
+
 
   const handlesubmit = () => {
 
@@ -144,9 +144,7 @@ export const CheckOutModel = () => {
                     </div>
                     <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                       <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Order placed Succeessfully</h3>
-                      {/* <div class="mt-2">
-                        <p class="text-sm text-gray-500">Order placed</p>
-                      </div> */}
+
                     </div>
                   </div>
                 </div>
@@ -155,7 +153,6 @@ export const CheckOutModel = () => {
                     onClick={() => navigate("/")}
                     type="button" class="inline-flex w-full justify-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 sm:ml-3 sm:w-auto">
                     Ok</button>
-
                 </div>
               </div>
             </div>
@@ -166,4 +163,3 @@ export const CheckOutModel = () => {
   )
 }
 
-//pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
