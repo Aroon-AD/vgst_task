@@ -40,7 +40,7 @@ export default function Home() {
       <div className='container mx-auto py-16 '>
         <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 ' >
           {ItemData.slice(0, 10).filter(item => {
-            if (search == "") {
+            if (search === "") {
               return item
             }
             else if (item.strMeal.toLowerCase().includes(search.toLowerCase())) {

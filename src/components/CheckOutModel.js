@@ -10,9 +10,9 @@ export const CheckOutModel = () => {
 
   const handlesubmit = () => {
 
-    if (inputs.address.length != 0 && inputs.email.length != 0 && inputs.city.length != 0
-      && inputs.country.length != 0 && inputs.full_name.length != 0 && inputs.phone.length != 0
-      && inputs.state.length != 0 && inputs.zipcode.length != 0) {
+    if (inputs.address.length !== 0 && inputs.email.length !== 0 && inputs.city.length !== 0
+      && inputs.country.length !== 0 && inputs.full_name.length !== 0 && inputs.phone.length !== 0
+      && inputs.state.length !== 0 && inputs.zipcode.length !== 0) {
       setOpen(true)
     }
     else {
